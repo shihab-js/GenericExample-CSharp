@@ -6,7 +6,28 @@ namespace GenericExample
     {
         static void Main(string[] args)
         {
-           
+            //create instance of datastore class string type
+            DataStore<string> strStore = new DataStore<string>();
+
+            strStore.Data = "Hi, Everyone!";
+
+            //strStrore.Data = 123; //compile time error
+
+            //print the data
+            Console.WriteLine(strStore.Data);
+
+
+            //create instance of datastore class integer type
+            DataStore<int> intStore = new DataStore<int>();
+
+            intStore.Data = 123;
+            //intStore.Data = "Hi, Everyone!"; //compile time error
+
+            //print the data
+            Console.WriteLine(intStore.Data);
+
+
+
         }
     }
 }
