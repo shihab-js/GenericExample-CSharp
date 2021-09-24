@@ -10,3 +10,9 @@ namespace GenericExample
         }
     }
 }
+
+//new DataStore<T> class
+class DataStore<T>
+{
+    public T Data { get; set; }
+}
