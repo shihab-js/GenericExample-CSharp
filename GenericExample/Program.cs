@@ -27,6 +27,29 @@ namespace GenericExample
             Console.WriteLine(intStore.Data);
 
 
+            //create a new instance of KeyValuePair class
+            KeyValuePair<int, String> kvp1 = new KeyValuePair<int, string>();
+
+            //set the key
+            kvp1.key = 1;
+
+            //set the value
+            kvp1.value = "Shihab";
+
+            //print the set key value
+            Console.WriteLine(kvp1.key + " " + kvp1.value);
+
+            //create a another new instance of Keyvaluepair class
+            KeyValuePair<string, string> kvp2 = new KeyValuePair<string, string>();
+
+            //set key
+            kvp2.key = "IT";
+
+            //set value
+            kvp2.value = "Programmer";
+
+            //print the set key value
+            Console.WriteLine(kvp2.key + " " + kvp2.value);
 
         }
     }
